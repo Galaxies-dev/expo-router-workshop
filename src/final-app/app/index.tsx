@@ -5,7 +5,7 @@ import { View, Text, Button, TouchableOpacity } from 'react-native';
 const Page = () => {
   return (
     <View>
-      <Text>There will be dragons</Text>
+      <Text style={{ alignSelf: 'center', padding: 12 }}>There will be dragons</Text>
       <Link href={'/about'} asChild>
         <TouchableOpacity
           style={{
