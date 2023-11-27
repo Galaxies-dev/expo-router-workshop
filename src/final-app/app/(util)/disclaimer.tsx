@@ -2,7 +2,7 @@ import { View, Text } from 'react-native';
 const Page = () => {
   return (
     <View>
-      <Text>List</Text>
+      <Text>Disclaimer</Text>
     </View>
   );
 };

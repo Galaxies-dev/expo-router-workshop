@@ -11,7 +11,7 @@ const TabsLayout = () => {
         },
         headerTintColor: '#fff',
       }}>
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name="list"
         options={{
           title: 'List',
@@ -23,11 +23,23 @@ const TabsLayout = () => {
             </Link>
           ),
         }}
+      /> */}
+      <Tabs.Screen
+        name="list"
+        options={{
+          title: 'List',
+          tabBarIcon: ({ size, color }) => <Ionicons name="list" size={size} color={color} />,
+          tabBarBadge: 9,
+          headerShown: false,
+        }}
       />
       <Tabs.Screen
         name="action"
         options={{
-          tabBarIcon: ({ size, color }) => <Ionicons name="alert" size={size} color={color} />,
+          title: 'Action',
+          tabBarIcon: ({ size, color }) => (
+            <Ionicons name="alert-circle-outline" size={size} color={color} />
+          ),
         }}
         listeners={() => ({
           tabPress: (e) => {
@@ -45,6 +57,13 @@ const TabsLayout = () => {
         }}
       />
       <Tabs.Screen name="secret" options={{ href: null }} />
+      {/* <Tabs.Screen
+        name="[id]"
+        options={{
+          title: '',
+          href: null,
+        }}
+      /> */}
     </Tabs>
   );
 };

@@ -19,7 +19,20 @@ const Page = () => {
         </TouchableOpacity>
       </Link>
 
-      <Link href={'/tabs/'} replace asChild>
+      <Link href={'/disclaimer'} asChild>
+        <TouchableOpacity
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: 8,
+          }}>
+          <Text style={{ fontSize: 18 }}>Open disclaimer</Text>
+          <Ionicons name="ios-arrow-forward" size={18} />
+        </TouchableOpacity>
+      </Link>
+
+      <Link href={'/tabs'} replace asChild>
         <TouchableOpacity
           style={{
             flexDirection: 'row',
@@ -32,7 +45,7 @@ const Page = () => {
         </TouchableOpacity>
       </Link>
 
-      <Link href={'/drawer/'} replace asChild>
+      <Link href={'/drawer'} replace asChild>
         <TouchableOpacity
           style={{
             flexDirection: 'row',
