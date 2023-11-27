@@ -12,10 +12,11 @@ const TabsLayout = () => {
         headerTintColor: '#fff',
       }}>
       <Tabs.Screen
-        name="index"
+        name="list"
         options={{
           title: 'List',
           tabBarIcon: ({ size, color }) => <Ionicons name="list" size={size} color={color} />,
+          tabBarBadge: 9,
           headerRight: () => (
             <Link href={'/'} replace>
               <Ionicons name="log-out-outline" size={28} color={'#fff'} />
@@ -24,12 +25,26 @@ const TabsLayout = () => {
         }}
       />
       <Tabs.Screen
+        name="action"
+        options={{
+          tabBarIcon: ({ size, color }) => <Ionicons name="alert" size={size} color={color} />,
+        }}
+        listeners={() => ({
+          tabPress: (e) => {
+            e.preventDefault();
+            alert('Action!');
+          },
+        })}
+      />
+
+      <Tabs.Screen
         name="profile"
         options={{
           title: 'My Profile',
           tabBarIcon: ({ size, color }) => <Ionicons name="list" size={size} color={color} />,
         }}
       />
+      <Tabs.Screen name="secret" options={{ href: null }} />
     </Tabs>
   );
 };

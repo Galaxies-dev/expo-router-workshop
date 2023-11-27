@@ -8,19 +8,42 @@ const Page = () => {
       <Text>There will be dragons</Text>
       <Link href={'/about'} asChild>
         <TouchableOpacity
-          style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: 8,
+          }}>
           <Text style={{ fontSize: 18 }}>Open about</Text>
           <Ionicons name="ios-arrow-forward" size={18} />
         </TouchableOpacity>
       </Link>
 
-      {/* <Link href={'/tabs/'} replace asChild>
+      <Link href={'/tabs/'} replace asChild>
         <TouchableOpacity
-          style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: 8,
+          }}>
           <Text style={{ fontSize: 18 }}>Open tabs</Text>
           <Ionicons name="ios-arrow-forward" size={18} />
         </TouchableOpacity>
-      </Link> */}
+      </Link>
+
+      <Link href={'/drawer/'} replace asChild>
+        <TouchableOpacity
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: 8,
+          }}>
+          <Text style={{ fontSize: 18 }}>Open drawer</Text>
+          <Ionicons name="ios-arrow-forward" size={18} />
+        </TouchableOpacity>
+      </Link>
     </View>
   );
 };

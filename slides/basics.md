@@ -14,8 +14,10 @@
 # What this workshop is
 
 - Learn how to use the Expo Router
+- Excercises
 - Write Code
 
+![Instructions](https://glebbahmutov.com/blog/images/how-to-draw-fp-owl/how-to-draw-an-owl.jpg)
 
 ---
 # What it's not
@@ -46,7 +48,16 @@
 - 🙋‍♂️ Wrap Up
 
 ---
+# Emoji
+
+- **Cody Cat** 🐱 "Write Code"
+- **Betty Beaver** 🦫 "Bonus Tasks"
+- **Olivia Owl** 🦉 "Good to know"
+- **Lilly Link** 🔗 "Useful docs"
+  
+---
 # Are you ready?
+
 ---
 # Why Expo Router is 🔥
 
@@ -62,12 +73,26 @@
 
 ---
 # Exercise 1: Stack
-
 - Copy the `1-1/_layout.tsx` to your `app/` folder
+
+![Stack Navigation](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/1-1.png?raw=true)
+
 ---
 # Exercise 2: Tabs
 - Create a `tabs` folder inside `app/`
 - Copy the `1-2/_layout.tsx` to your `app/tabs` folder
 
+![Tabs Navigation](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/1-2.png?raw=true)
 ---
 # Exercise 3: Drawer
+- Create a `drawer` folder inside `app/`
+- Copy the `1-3/_layout.tsx` to your `app/drawer` folder
+
+![Drawer Navigation](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/1-3.png?raw=true)
+
+---
+# Exercise 4: Hooks and Navigation
+- Create a `tabs` folder inside `app/`
+- Copy the `1-2/_layout.tsx` to your `app/tabs` folder
+
+---

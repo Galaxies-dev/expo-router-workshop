@@ -1,7 +1,9 @@
 // Expo Router Stack Layout
 import React from 'react';
+import { Stack } from 'expo-router';
 
 // Task: Create a simple layout with two screens
+
 // 🐱 Create a Stack with two screens, Home and About
 // 🐱 Navigate between them using <Link>
 // 🦫 Customise the header with screenOptions
