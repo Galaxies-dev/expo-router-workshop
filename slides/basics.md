@@ -104,6 +104,11 @@
 ![Details Page](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/1-5.png?raw=true)
 
 ---
+# Coffee Break
+
+![Coffee break](https://cdn.shopify.com/s/files/1/0435/1216/8606/files/Coffee-is-ready-Coffee-Memes_480x480.jpg?v=1633902188)
+
+---
 # Universal Apps with Expo Router
 
 ![Expo Router](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ocHdXN0Ithn5Xj7QTs_ucA.png)
@@ -155,3 +160,8 @@
 # Exercise 6: Deep Links
 
 ![Android Deep Link](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-6.png?raw=true)
+
+---
+# Lunch Break
+
+![Hungry](https://i.pinimg.com/originals/9a/93/77/9a9377aef09b47f0f9f0a3e722934f8e.gif) 
