@@ -2,7 +2,7 @@
 import { Drawer } from 'expo-router/drawer';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Ionicons } from '@expo/vector-icons';
-import { Link, useSegments } from 'expo-router';
+import { Link, usePathname } from 'expo-router';
 import { DrawerContentScrollView, DrawerItemList, DrawerItem } from '@react-navigation/drawer';
 import { Platform, Pressable, Text } from 'react-native';
 import { useEffect, useState } from 'react';
@@ -35,13 +35,12 @@ const DrawerLayout = () => {
 };
 
 const HeaderLink = ({ href, text }: any) => {
-  const segments = useSegments();
+  const path = usePathname();
   const [selected, setSelected] = useState(false);
 
   useEffect(() => {
-    if (segments.length < 2) return;
     // 🐱 Check if the href matches the segments and set selected
-  }, [segments]);
+  }, [path]);
 
   return (
     <Link href={href} asChild>
