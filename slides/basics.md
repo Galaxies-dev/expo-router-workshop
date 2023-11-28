@@ -143,12 +143,15 @@
 # Exercise 4: HTML Head
 - Copy the `2-4/+html.tsx` and `2-4/[...unmatched].tsx` to your `app/` folder
 
-![CSS](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-4.png?raw=true)
+![HTML Head](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-4.png?raw=true)
 
 ---
 # Exercise 5: Static Export
 - Copy the `2-4/+html.tsx` and `2-4/[...unmatched].tsx` to your `app/` folder
 
-![CSS](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-4.png?raw=true)
+![Static Page](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-5.png?raw=true)
 
 ---
+# Exercise 6: Deep Links
+
+![Android Deep Link](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-6.png?raw=true)
