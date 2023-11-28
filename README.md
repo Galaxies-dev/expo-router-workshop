@@ -8,7 +8,19 @@ In this workshop, you will learn how to use the Expo Router to build a React Nat
 
 ## Exercises
 
+### Routing with Expo Router
+
 - `exercises/1-1` - Stack Layout
 - `exercises/1-2` - Tabs Layout
 - `exercises/1-3` - Drawer Layout
 - `exercises/1-4` - Hooks and Navigation
+- `exercises/1-5` - Nested Layouts
+
+### Universal Apps with Expo Router
+
+- `exercises/2-1` - Web Layouts
+- 
+
+
+
+### Authentication with Expo Router

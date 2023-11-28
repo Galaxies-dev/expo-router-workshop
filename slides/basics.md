@@ -59,7 +59,7 @@
 # Are you ready?
 
 ---
-# Why Expo Router is 🔥
+# Routing with Expo Router
 
 ![Expo Router](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ocHdXN0Ithn5Xj7QTs_ucA.png)
 
@@ -104,3 +104,31 @@
 ![Details Page](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/1-5.png?raw=true)
 
 ---
+# Universal Apps with Expo Router
+
+![Expo Router](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ocHdXN0Ithn5Xj7QTs_ucA.png)
+
+---
+# Exercise 1: Web Layout
+- Copy the `2-1/_layout.tsx` to your `app/drawer` folder
+
+![Web Layout](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-1.png?raw=true)
+
+---
+# Exercise 2: Platform-specific Extensions
+- Copy the `2-2/page.web.tsx.tsx` to your `components/home` folder
+
+![Platform Specific files](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-2.png?raw=true)
+
+---
+# Alternative Approach
+
+- Solito + Next.js
+
+![Solito](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/solito.png?raw=true)
+
+---
+# Exercise 3: CSS
+- Copy the `2-3/page.web.tsx.tsx` to your `components/home` folder
+
+![CSS](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-3.png?raw=true)

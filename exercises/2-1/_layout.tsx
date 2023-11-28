@@ -1,49 +1,32 @@
+// Expo Router Web Layout
 import { Drawer } from 'expo-router/drawer';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Ionicons } from '@expo/vector-icons';
-import { Link, Slot, useSegments } from 'expo-router';
+import { Link, useSegments } from 'expo-router';
 import { DrawerContentScrollView, DrawerItemList, DrawerItem } from '@react-navigation/drawer';
 import { Platform, Pressable, Text } from 'react-native';
 import { useEffect, useState } from 'react';
+
+// Task: Create a Web Layout with a Header and a Footer
+
+// 🐱 Update the app/drawer/_layout.tsx file to include a web layout
+// 🐱 Show a HeaderLink to /drawer/list and /drawer/profile in the header
+// 🐱 Replace the list.tsx with the app/tabs/list folder
+
+// 🦫 Fix the web list layout inside the app/drawer/list/_layout.tsx file
+// 🦫 Fix the native list layout and use a <DrawerToggleButton/>
+// 🦫 Mark the selected header link with an underline
+
+// 🦉 You can use div, header and footer in the web layout
+// 🦉 You get all path segments with useSegments()
+
+// 🔗 Fix for Hydration issue with Reanimated on the web: https://github.com/expo/router/issues/718#issuecomment-1806886353
 
 const DrawerLayout = () => {
   if (Platform.OS === 'web') {
     return (
       <div style={{ flex: 1 }}>
-        <header>
-          <div
-            style={{
-              display: 'flex',
-              gap: 20,
-              padding: 16,
-              justifyContent: 'center',
-              alignItems: 'center',
-              backgroundColor: '#171630',
-            }}>
-            <HeaderLink href="/drawer/list" text={'List'} />
-            <HeaderLink href="/drawer/profile" text={'Profile'} />
-          </div>
-        </header>
-        <Slot />
-        <footer>
-          <div
-            style={{
-              textAlign: 'center',
-              padding: 16,
-              justifyContent: 'center',
-              alignItems: 'center',
-              backgroundColor: '#171630',
-              color: '#fff',
-            }}>
-            Made with ❤️ by{' '}
-            <a
-              href="https://galaxies.dev"
-              target="_blank"
-              style={{ textDecoration: 'none', color: '#fff' }}>
-              Galaxies.dev
-            </a>
-          </div>
-        </footer>
+        <header>{/* 🐱 Create a layout with header and footer */}</header>
       </div>
     );
   } else {
@@ -57,8 +40,7 @@ const HeaderLink = ({ href, text }: any) => {
 
   useEffect(() => {
     if (segments.length < 2) return;
-    const path = '/' + segments.join('/');
-    setSelected(path === href);
+    // 🐱 Check if the href matches the segments and set selected
   }, [segments]);
 
   return (
