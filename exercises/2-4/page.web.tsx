@@ -1,6 +1,14 @@
+// Expo Router Head and Meta
 import { Link, Route } from 'expo-router';
 import './page.css';
-import Head from 'expo-router/head';
+
+// Task: Add Meta information to your pages
+
+// 🐱 Add a Head component to this page with title and meta
+
+// 🦫 Also update the about page with meta information
+
+// 🦉 You can import Head from expo-router/head
 
 const Page = () => {
   const routes: { name: string; path: Route<string> }[] = [
@@ -12,10 +20,7 @@ const Page = () => {
 
   return (
     <div className="container">
-      <Head>
-        <title>Galactic Workshop</title>
-        <meta name="description" content="Expo Router is awesome." />
-      </Head>
+      {/* 🐱 Add your Head with meta and title */}
       <h2>Expo Router Workshop App</h2>
       <div style={{ display: 'flex', flex: 1, flexDirection: 'column', gap: 12 }}>
         {routes.map((route) => (
@@ -26,20 +31,5 @@ const Page = () => {
       </div>
     </div>
   );
-
-  // return (
-  //   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  //     <h2>Expo Router Workshop App</h2>
-  //     <div style={{ display: 'flex', flex: 1, flexDirection: 'column', gap: 12 }}>
-  //       {routes.map((route) => (
-  //         <Link key={route.path} href={route.path}>
-  //           <button>
-  //             <p style={{ fontSize: 18 }}>Open {route.name}</p>
-  //           </button>
-  //         </Link>
-  //       ))}
-  //     </div>
-  //   </div>
-  // );
 };
 export default Page;

@@ -17,7 +17,7 @@ const RootLayout = () => {
         <Stack.Screen name="tabs" options={{ headerShown: false }} />
         <Stack.Screen name="drawer" options={{ headerShown: false }} />
         <Stack.Screen
-          name="(util)/disclaimer"
+          name="util/disclaimer"
           options={{ presentation: 'modal', title: 'Disclaimer' }}
         />
       </Stack>

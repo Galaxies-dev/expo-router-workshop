@@ -19,7 +19,7 @@ const Page = () => {
         </TouchableOpacity>
       </Link>
 
-      <Link href={'/disclaimer'} asChild>
+      <Link href={'/util/disclaimer'} asChild>
         <TouchableOpacity
           style={{
             flexDirection: 'row',

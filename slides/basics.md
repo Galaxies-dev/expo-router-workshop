@@ -129,6 +129,26 @@
 
 ---
 # Exercise 3: CSS
-- Copy the `2-3/page.web.tsx.tsx` to your `components/home` folder
+- Copy the `2-3/page.web.tsx` and `2-3/page.css` to your `components/home` folder
 
 ![CSS](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-3.png?raw=true)
+
+---
+# More CSS Styling?
+
+- Nativewind (Tailwind)
+- Tamagui
+
+---
+# Exercise 4: HTML Head
+- Copy the `2-4/+html.tsx` and `2-4/[...unmatched].tsx` to your `app/` folder
+
+![CSS](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-4.png?raw=true)
+
+---
+# Exercise 5: Static Export
+- Copy the `2-4/+html.tsx` and `2-4/[...unmatched].tsx` to your `app/` folder
+
+![CSS](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-4.png?raw=true)
+
+---

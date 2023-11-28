@@ -1,10 +1,10 @@
-// Expo Router Platform Specific Modules
+// Expo Router CSS
 import { Link, Route } from 'expo-router';
 
-// Task: Create different versions of the home page for web and native
+// Task: Use CSS for web styling
 
-// 🐱 Copy your app/index.tsx to components/home/page.tsx
-// 🐱 Use `export { default } from '@/components/home/page';` in your ap/index.tsx
+// 🐱 Import the CSS file
+// 🐱
 
 // 🦫 Fix the TS error for the routes array
 // 🦫 Fix the web layout in the app/_layout.tsx
@@ -12,7 +12,7 @@ import { Link, Route } from 'expo-router';
 // 🦉 You can use all kind of web tags in the web layout
 
 const Page = () => {
-  const routes = [
+  const routes: { name: string; path: Route<string> }[] = [
     { name: 'About', path: '/about' },
     { name: 'Disclaimer', path: '/util/disclaimer' },
     { name: 'Tabs', path: '/tabs/list/' },
@@ -22,7 +22,13 @@ const Page = () => {
   return (
     <div>
       <h2>Expo Router Workshop App</h2>
-      {/* 🐱 Add links to our pages */}
+      <div style={{ display: 'flex', flex: 1, flexDirection: 'column', gap: 12 }}>
+        {routes.map((route) => (
+          <Link key={route.path} href={route.path}>
+            <button className="button">Open {route.name}</button>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };

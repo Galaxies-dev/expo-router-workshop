@@ -1,11 +1,24 @@
+// Expo Router Static Export
 import { User } from '@/interfaces/user';
 import { getUserById } from '@/services/api';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Image, ActivityIndicator, Button } from 'react-native';
 
+// Task: Create and serve a static build of your app
+
+// 🐱 Implement the generateStaticParams function
+
+// 🦫 Create a public folder at the root of your project to serve static files
+
+// 🦉 You can use the generateStaticParams function to generate static routes
+// 🦉 Useful commands:
+// npm i react-native-reanimated@3.5.4 (bugfix for web, breaks Expo Go)
+// npx expo export -p web
+// npx serve dist
+
 export async function generateStaticParams(): Promise<Record<string, string>[]> {
-  return [{ id: '1' }, { id: '2' }, { id: '3' }, { id: '4' }, { id: '5' }];
+  // 🐱 Return possible values for id
 }
 
 const Page = () => {

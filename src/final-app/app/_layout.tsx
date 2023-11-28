@@ -1,7 +1,6 @@
-import { Link, Slot, Stack, useSegments } from 'expo-router';
+import { Slot, Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useState, useEffect } from 'react';
-import { Platform, Pressable, Text } from 'react-native';
+import { Platform } from 'react-native';
 
 const RootLayout = () => {
   if (Platform.OS === 'web') {
@@ -22,39 +21,13 @@ const RootLayout = () => {
           <Stack.Screen name="tabs" options={{ headerShown: false }} />
           <Stack.Screen name="drawer" options={{ headerShown: false }} />
           <Stack.Screen
-            name="(util)/disclaimer"
+            name="util/disclaimer"
             options={{ presentation: 'modal', title: 'Disclaimer' }}
           />
         </Stack>
       </>
     );
   }
-};
-
-const HeaderLink = ({ href, text }: any) => {
-  const segments = useSegments();
-  const [selected, setSelected] = useState(false);
-
-  useEffect(() => {
-    if (segments.length < 2) return;
-    const path = '/' + segments.join('/');
-    setSelected(path === href);
-  }, [segments]);
-
-  return (
-    <Link href={href} asChild>
-      <Pressable>
-        <Text
-          style={{
-            color: '#fff',
-            fontSize: 18,
-            textDecorationLine: selected ? 'underline' : 'none',
-          }}>
-          {text}
-        </Text>
-      </Pressable>
-    </Link>
-  );
 };
 
 export default RootLayout;
