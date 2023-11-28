@@ -94,7 +94,7 @@
 # Exercise 4: Navigation Params
 - Copy the `1-4/list.tsx` and `1-4/[id].tsx` to your `app/tabs` folder
 
-![DUsing Params](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/1-4.png?raw=true)
+![Using Params](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/1-4.png?raw=true)
 
 ---
 # Exercise 5: Nested Layout & Hooks
@@ -102,4 +102,5 @@
 - Copy the `1-5/_layout_.tsx` to your `app/tabs/list` folder
 
 ![Details Page](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/1-5.png?raw=true)
+
 ---
