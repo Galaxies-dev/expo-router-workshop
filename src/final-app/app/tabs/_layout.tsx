@@ -53,7 +53,9 @@ const TabsLayout = () => {
         name="profile"
         options={{
           title: 'My Profile',
-          tabBarIcon: ({ size, color }) => <Ionicons name="list" size={size} color={color} />,
+          tabBarIcon: ({ size, color }) => (
+            <Ionicons name="person-circle-outline" size={size} color={color} />
+          ),
         }}
       />
       <Tabs.Screen name="secret" options={{ href: null }} />

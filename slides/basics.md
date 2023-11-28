@@ -178,4 +178,25 @@
 
 - Login/Register
 - Protected Routes (Tabs)
-- 
+
+
+---
+# Exercise 1: Login Stack
+- Copy the `3-1/_layout_.tsx` to your `app/` folder
+
+![Login UI](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/3-1.png?raw=true)
+
+---
+# Exercise 2: Auth Provider
+- Copy the `3-2/_layout_.tsx` to your `app/` folder
+- Copy the `3-2/(authenticated)).tsx` to your `app/` folder
+
+![Inside UI](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/3-2.png?raw=true)
+
+---
+# Exercise 3: Inside Tabs
+- Copy the `3-3/_layout_.tsx` to your `app/(authenticated)` folder
+
+![Inside UI](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/3-4.png?raw=true)
+
+---
