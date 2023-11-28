@@ -13,8 +13,10 @@ import { Link } from 'expo-router';
 
 // 🦫 Define a new Screen entry for the [id] page
 // 🦫 Update the header with API data
+// 🦫 Toggle the Drawer from the profile page
 
 // 🦉 You can extract the ID using useLocalSearchParams
+// 🦉 You can add the useNavigation hook in the profile page to toggle the drawer
 
 const Page = () => {
   const [items, setItems] = useState<User[]>([]);

@@ -10,6 +10,8 @@ import './page.css';
 
 // 🦉 You can import Head from expo-router/head
 
+// 🔗 You can also host the app as a SPA: https://docs.expo.dev/distribution/publishing-websites/#hosting-on-third-party-services
+
 const Page = () => {
   const routes: { name: string; path: Route<string> }[] = [
     { name: 'About', path: '/about' },

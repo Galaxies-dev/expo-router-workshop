@@ -1,10 +1,12 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 import { View, Text, Button, TouchableOpacity } from 'react-native';
 
 const Page = () => {
   return (
     <View>
+      <StatusBar style="light" />
       <Text style={{ alignSelf: 'center', padding: 12 }}>There will be dragons</Text>
       <Link href={'/about'} asChild>
         <TouchableOpacity

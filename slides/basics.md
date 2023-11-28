@@ -162,6 +162,20 @@
 ![Android Deep Link](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/2-6.png?raw=true)
 
 ---
+# Deep Linking
+
+- Android: App Links
+- iOS: Universal Links
+- Also possible: Apple Handoff
+
+
 # Lunch Break
 
-![Hungry](https://i.pinimg.com/originals/9a/93/77/9a9377aef09b47f0f9f0a3e722934f8e.gif) 
+![Hungry](https://i.pinimg.com/originals/9a/93/77/9a9377aef09b47f0f9f0a3e722934f8e.gif)
+
+---
+# Case Study: Auth
+
+- Login/Register
+- Protected Routes (Tabs)
+- 
