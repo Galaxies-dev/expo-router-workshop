@@ -29,7 +29,7 @@
 # Prerequisites
 
 - Check out GitHub Repository
-- Install Dependencies in `src/workshop-app` with `npm install`
+- Install Dependencies in `src/basic-app` with `npm install`
 - Start Expo with `npx expo`
 
 ---
@@ -168,7 +168,7 @@
 - iOS: Universal Links
 - Also possible: Apple Handoff
 
-
+---
 # Lunch Break
 
 ![Hungry](https://i.pinimg.com/originals/9a/93/77/9a9377aef09b47f0f9f0a3e722934f8e.gif)
