@@ -187,16 +187,30 @@
 ![Login UI](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/3-1.png?raw=true)
 
 ---
-# Exercise 2: Auth Provider
+# Exercise 2: Protected Routes
 - Copy the `3-2/_layout_.tsx` to your `app/` folder
 - Copy the `3-2/(authenticated)).tsx` to your `app/` folder
 
 ![Inside UI](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/3-2.png?raw=true)
 
 ---
-# Exercise 3: Inside Tabs
+# Exercise 3: Nested Tabs
 - Copy the `3-3/_layout_.tsx` to your `app/(authenticated)` folder
 
-![Inside UI](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/3-4.png?raw=true)
+![Inside UI](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/3-3.png?raw=true)
 
 ---
+# Exercise 4: Additional Drawer
+- Copy the `3-4/_layout_.tsx` to your `app/(authenticated)` folder
+
+![Drawer UI](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/3-4.png?raw=true)
+
+---
+# Wrap Up
+
+- What did you learn?
+- Feedback 🙏
+- https://galaxies.dev/workshop-feedback
+
+![Feedback](https://github.com/Galaxies-dev/expo-router-workshop/blob/main/slides/assets/feedback.png?raw=true)
+

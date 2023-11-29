@@ -1,6 +1,5 @@
 import Colors from '@/constants/Colors';
 import { AuthProvider, useAuth } from '@/context/AuthContext';
-import { Ionicons } from '@expo/vector-icons';
 import { Stack, useRouter, useSegments } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
@@ -17,7 +16,7 @@ const InitialLayout = () => {
     const inAuthGroup = segments[0] === '(authenticated)';
 
     if (token && !inAuthGroup) {
-      router.replace('/(authenticated)/home');
+      router.replace('/(authenticated)/(tabs)/home');
     } else if (!token && inAuthGroup) {
       router.replace('/');
     }
