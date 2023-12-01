@@ -1,14 +1,6 @@
-// Expo Router CSS
 import { Link, Route } from 'expo-router';
-
-// Task: Use CSS for web styling
-
-// 🐱 Import the CSS file
-
-// 🦫 Fix the TS error for the routes array
-// 🦫 Fix the web layout in the app/_layout.tsx
-
-// 🦉 You can use all kind of web tags in the web layout
+import './page.css';
+import Head from 'expo-router/head';
 
 const Page = () => {
   const routes: { name: string; path: Route<string> }[] = [
@@ -19,7 +11,11 @@ const Page = () => {
   ];
 
   return (
-    <div>
+    <div className="container">
+      <Head>
+        <title>Galactic Workshop</title>
+        <meta name="description" content="Expo Router is awesome." />
+      </Head>
       <h2>Expo Router Workshop App</h2>
       <div style={{ display: 'flex', flex: 1, flexDirection: 'column', gap: 12 }}>
         {routes.map((route) => (

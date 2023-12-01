@@ -3,7 +3,8 @@
 # Task: Open a Deep Link into your app
 
 # 🐱 Create a prebuild of your app with `npx expo prebuild`
-# 🐱 iOS: Open safari and type `myapp://drawer/list/4`
+# 🐱 Run the app with `npx expo run:[ios|android]`
+# 🐱 iOS: Open safari and type `exp://drawer/list/4`
 # 🐱 Android: Open the terminal and type `adb shell am start -a android.intent.action.VIEW -d "myapp://drawer/list/4"`
 
 # 🦫 Fix the missing back button on the details screen
