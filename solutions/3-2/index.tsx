@@ -59,13 +59,13 @@ const Login = () => {
         <Text style={{ color: '#fff' }}>Sign in</Text>
       </TouchableOpacity>
 
-     {/* 🐱 Add Link to register */}
-     <TouchableOpacity style={styles.outlineButton}>
-        <Text style={{ color: '#fff' }}>Create Account</Text>
-      </TouchableOpacity>
-      
-      {/* 🐱 Fix the button */}
-      <Link href={'/privacy'}>
+      <Link href={'/register'} asChild>
+        <TouchableOpacity style={styles.outlineButton}>
+          <Text style={{ color: '#fff' }}>Create Account</Text>
+        </TouchableOpacity>
+      </Link>
+
+      <Link href={'/privacy'} asChild>
         <TouchableOpacity style={{ alignItems: 'center' }}>
           <Text style={{ color: Colors.primary }}>Privacy Policy</Text>
         </TouchableOpacity>

@@ -15,7 +15,7 @@ const Layout = () => {
   return (
     <>
       {/* 🐱 Create an style the Tabs layout */}
-      {/* 🐱 Add an customise the tow tabs */}
+      {/* 🐱 Add an customise the two tabs */}
     </>
   );
 };

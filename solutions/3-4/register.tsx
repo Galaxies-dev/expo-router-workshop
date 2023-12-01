@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import React, { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
-import { Link } from 'expo-router';
+import { useRouter } from 'expo-router';
 import Colors from '@/constants/Colors';
 
 const Login = () => {
@@ -17,14 +17,16 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const { onLogin } = useAuth();
+  const { onRegister } = useAuth();
+  const router = useRouter();
 
-  const login = async () => {
+  const register = async () => {
     setLoading(true);
-
-    const result = await onLogin!(email, password);
+    const result = await onRegister!(email, password);
     if (result && result.error) {
       alert(result.msg);
+    } else {
+      router.push('/');
     }
     setLoading(false);
   };
@@ -35,8 +37,6 @@ const Login = () => {
         source={{ uri: 'https://galaxies.dev/img/logos/logo--blue.png' }}
         style={styles.image}
       />
-      <Text style={styles.header}>Galaxies</Text>
-      <Text style={styles.subheader}>The app to be.</Text>
 
       <TextInput
         autoCapitalize="none"
@@ -44,7 +44,7 @@ const Login = () => {
         value={email}
         onChangeText={setEmail}
         style={styles.inputField}
-        placeholderTextColor={'#888888'}
+        placeholderTextColor={'#fff'}
       />
       <TextInput
         placeholder="password"
@@ -52,24 +52,12 @@ const Login = () => {
         onChangeText={setPassword}
         secureTextEntry
         style={styles.inputField}
-        placeholderTextColor={'#888888'}
+        placeholderTextColor={'#fff'}
       />
 
-      <TouchableOpacity onPress={login} style={styles.button}>
-        <Text style={{ color: '#fff' }}>Sign in</Text>
+      <TouchableOpacity onPress={register} style={styles.button}>
+        <Text style={{ color: '#fff' }}>Sign up</Text>
       </TouchableOpacity>
-
-     {/* 🐱 Add Link to register */}
-     <TouchableOpacity style={styles.outlineButton}>
-        <Text style={{ color: '#fff' }}>Create Account</Text>
-      </TouchableOpacity>
-      
-      {/* 🐱 Fix the button */}
-      <Link href={'/privacy'}>
-        <TouchableOpacity style={{ alignItems: 'center' }}>
-          <Text style={{ color: Colors.primary }}>Privacy Policy</Text>
-        </TouchableOpacity>
-      </Link>
 
       {loading && (
         <View
