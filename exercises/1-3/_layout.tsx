@@ -15,6 +15,7 @@ import { DrawerContentScrollView, DrawerItemList, DrawerItem } from '@react-navi
 
 // 🦫 Use the headerShown property in the right layout
 // 🦫 Display a custom drawerContent with <Drawer drawerContent={...}>
+// 🦫 Toggle the Drawer from the profile page
 
 // 🦉 Drawer requires additional packages: npx expo install @react-navigation/drawer react-native-gesture-handler react-native-reanimated
 // 🦉 For these packaes you ned to update your Babel Config and restart Expo with `npx expo start --clear`

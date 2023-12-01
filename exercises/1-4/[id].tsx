@@ -18,8 +18,8 @@ const Page = () => {
   }, []);
 
   return (
-    {!user && <ActivityIndicator />}
     <View>
+      {!user && <ActivityIndicator />}
       {user && (
         <View style={styles.card}>
           <Image
