@@ -26,6 +26,11 @@ const DrawerLayout = () => {
           drawerActiveBackgroundColor: '#171630',
           drawerActiveTintColor: '#fff',
           drawerLabelStyle: { marginLeft: -20 },
+          headerRight: () => (
+            <Link href={'/'} replace>
+              <Ionicons name="log-out-outline" size={28} color={'#fff'} />
+            </Link>
+          ),
         }}>
         <Drawer.Screen
           name="list"
@@ -34,11 +39,6 @@ const DrawerLayout = () => {
             headerTitle: 'My List',
             drawerIcon: ({ size, color }) => (
               <Ionicons name="list-outline" size={size} color={color} />
-            ),
-            headerRight: () => (
-              <Link href={'/'} replace>
-                <Ionicons name="log-out-outline" size={28} color={'#fff'} />
-              </Link>
             ),
           }}
         />

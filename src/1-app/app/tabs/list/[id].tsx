@@ -1,6 +1,6 @@
 import { User } from '@/interfaces/user';
 import { getUserById } from '@/services/api';
-import { Stack, useGlobalSearchParams, useLocalSearchParams, useRouter } from 'expo-router';
+import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Image, ActivityIndicator, Button } from 'react-native';
 

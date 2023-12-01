@@ -18,7 +18,8 @@ const Page = () => {
 
   const renderRow = ({ item }: { item: User }) => {
     return (
-      <Link href={`/${item.id}?query=foo`} asChild>
+      <Link href={`/util/${item.id}?query=foo`} asChild>
+        {/* <Link href={`/tabs/list/${item.id}?query=foo`} asChild> */}
         <TouchableOpacity
           style={{
             padding: 10,
