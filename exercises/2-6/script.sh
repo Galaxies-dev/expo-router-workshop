@@ -10,3 +10,4 @@
 # 🦫 Fix the missing back button on the details screen
 
 # 🦉 You can use the generateStaticParams function to generate static routes
+# 🦉 Also possible with `npx uri-scheme open myapp://drawer/list/8 --ios`
