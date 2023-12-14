@@ -5,7 +5,7 @@ import { Platform } from 'react-native';
 
 // Task: Create the Stack for the login area
 
-// 🐱 Implement a stack layout with login and reigster
+// 🐱 Implement a stack layout with login and register
 // 🐱 Display privacy as a modal
 
 // 🦫 Fix the buttons inside the app/index.tsx
