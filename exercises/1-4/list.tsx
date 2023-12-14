@@ -16,7 +16,6 @@ import { Link } from 'expo-router';
 // 🦫 Style the StatusBar light
 
 // 🦉 You can extract the ID using useLocalSearchParams
-// 🦉 You can add the useNavigation hook in the profile page to toggle the drawer
 
 const Page = () => {
   const [items, setItems] = useState<User[]>([]);
